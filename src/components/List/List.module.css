@@ -1,0 +1,72 @@
+.listCard{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.lightCard{
+    color: black;
+    background-color: white;
+}
+.darkCard{
+    background-color: rgb(40, 40, 40);
+    color: whitesmoke;
+}
+.dates{
+    font-size: 14px;
+}
+.listLeft{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    max-width: 80%;
+}
+.priority{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+.highPrior{
+    background-color: red;
+}
+.mediumPrior{
+    background-color: cornflowerblue;
+
+}
+.lowPrior{
+    background-color: yellow;
+    color: black;
+    border: 1px solid;
+}
+.listRight {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.editBtn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    height: fit-content;
+    border: 2px solid black;
+}
+
+.deleteBtn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 74, 74);
+    color: black;
+    height: fit-content;
+    border: 2px solid black;
+    cursor: pointer;
+}

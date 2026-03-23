@@ -1,0 +1,87 @@
+.dashboard{
+    padding: 20px 160px;
+    box-sizing: border-box;
+}
+.dashboardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboardAdd{
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    width: fit-content;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.dashboardLight{
+    background-color: whitesmoke;
+    color: rgb(40, 40, 40);
+}
+.dashboardDark{
+    background-color: rgb(23, 20, 20);
+    color: white;
+    border: 2px solid;
+}
+.dashboardBatches {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.high {
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.medium {
+    background-color: cornflowerblue;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.low {
+    background-color: yellow;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.cardList{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.lighthed{
+    color: black;
+}
+.darkhed{
+    color: white;
+}
+.loader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+@media screen and (max-width:1024px){
+    .dashboard{
+        padding: 10px 20px;
+    }
+    .dashboardHeader{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}

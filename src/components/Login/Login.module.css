@@ -1,0 +1,66 @@
+.login{
+    color: black;
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 20px 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin: 100px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+.cardlight{
+    background-color: black;
+    color: rgb(218, 209, 209);
+
+}
+.carddark{
+    background-color: rgb(218, 209, 209);
+    color: black;
+}
+.inputField{
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+.inputbox{
+    margin-bottom: 20px;
+}
+.btncard{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.btncardlight{
+    background-color: white;
+    color: black;
+}
+
+.btncarddark{
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width:1024px){
+    .login{
+        padding: 10px 20px;
+    }
+    .card{
+        width: 90%;
+    }
+}

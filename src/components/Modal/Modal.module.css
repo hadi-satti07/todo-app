@@ -1,0 +1,134 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 40%;
+    border-radius: 10px;
+    padding: 20px;
+}
+.cardLight{
+    background-color: whitesmoke;
+    color: black;
+}
+.cardDark{
+    background-color: rgb(36, 34, 34);
+    color: white;
+}
+.inputField{
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+
+}
+.secondRow{
+    display: flex;
+    justify-content: space-between;
+}
+.badges{
+    display: flex;
+    gap: 10px;
+    color: white;
+    height: fit-content;
+}
+
+.high{
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.Medium{
+    background-color: cornflowerblue;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    height: fit-content;
+    cursor: pointer;
+}
+.Low{
+    background-color: yellow;
+    color: black;
+    padding: 5px 10px;
+    height: fit-content;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.date{
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 45%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cancel{
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+
+.add{
+    background-color: rgb(54, 211, 86);
+    color: white;
+    font-weight: 700;
+}
+.selectedPriority{
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+}
+@media screen and (max-width:1024px) {
+    .card{
+        width: 70%;
+    }
+    .date{
+        width: 100%;
+    }
+    .secondRow{
+        flex-direction: column;
+    }
+    .badges{
+        justify-content: space-between;
+    }
+    .btns{
+        gap: 20px;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+    .btn{
+        width: 90%;
+    }
+}
