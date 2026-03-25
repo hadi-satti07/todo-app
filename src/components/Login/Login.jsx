@@ -25,7 +25,7 @@ const Login = () => {
     const handleRegister = async () => {
         try {
             const userData = await createUserWithEmailAndPassword(auth, inputData.email, inputData.password);
-            localStorage.setItem('user', JSON.stringify(userData));
+            l
             navigate('/dashboard');
         } catch (err) {
             alert(err.message)
@@ -34,7 +34,7 @@ const Login = () => {
     const handleLogin = async () => {
         try {
             const userData = await signInWithEmailAndPassword(auth, inputData.email, inputData.password);
-            localStorage.setItem('user', JSON.stringify(userData));
+            
             navigate('/dashboard');
         } catch (err) {
             alert(err.message)
@@ -58,16 +58,16 @@ const Login = () => {
             alert(err.message)
         }
     }
-    const facebookLogin = async()=>{
-        try {
-            const userData = await signInWithPopup(auth, fP);
-            localStorage.setItem('user', JSON.stringify(userData));
-            navigate('/dashboard');
+    // const facebookLogin = async()=>{
+    //     try {
+    //         const userData = await signInWithPopup(auth, fP);
+    //         localStorage.setItem('user', JSON.stringify(userData));
+    //         navigate('/dashboard');
             
-        } catch (err) {
-            alert(err.message)
-        }
-    }
+    //     } catch (err) {
+    //         alert(err.message)
+    //     }
+    // }
     return (
         <div className={classes.login}>
             <div className={[classes.card, theme === 'light' ? classes.cardlight : classes.carddark].join(' ')}>
@@ -88,7 +88,7 @@ const Login = () => {
                 </div>
                 }
                 {
-                    cardname === "Login" && <div onClick={facebookLogin} className={[classes.btncard, theme === 'light' ? classes.btncardlight : classes.btncarddark].join(' ')}>
+                    cardname === "Login" && <div  className={[classes.btncard, theme === 'light' ? classes.btncardlight : classes.btncarddark].join(' ')}>
                     <FacebookSharpIcon sx={{color:"red"}}/> Login
                     
                 </div>

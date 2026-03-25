@@ -6,20 +6,23 @@ import { ContextAPI } from '../../utils/ContextAPI';
 const Modal = ({ theme, closeopenmodal, editData }) => {
     const [inputField, setInputField] = useState({ title: '', date: '', priority: '' });
     const { user } = useContext(ContextAPI)
-    const handlecreateData = async () => {
-        const listRef = collection(db, 'lists')
-        try {
-            await addDoc(listRef, {
-                ...inputField,
-                addedBy: user.uid
-            })
-            window.location.reload();
-            
-        } catch (err) {
-            alert(err.message)
-            
-        }
+   const handlecreateData = async () => {
+    if (!user) {
+        alert("User not loaded yet");
+        return;
     }
+
+    const listRef = collection(db, 'lists')
+    try {
+        await addDoc(listRef, {
+            ...inputField,
+            addedBy: user.uid
+        })
+        window.location.reload();
+    } catch (err) {
+        alert(err.message)
+    }
+}
 
     useEffect(()=>{
         if(editData){
